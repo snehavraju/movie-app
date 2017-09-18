@@ -1,0 +1,29 @@
+.navbar{
+    background-color: black;
+}
+
+
+#menubar{
+    list-style-type:none;
+}
+#menubar li {
+    display: inline;
+    
+}
+
+#menubar li a {
+    color:white;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    
+}
+.fa fa-home, .fa fa-user{
+color:white}
+
+
+
+
+
+
