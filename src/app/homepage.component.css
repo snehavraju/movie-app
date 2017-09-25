@@ -1,0 +1,13 @@
+#myCarousel .item{ height:450px; }
+
+#slide1{
+    background: url("https://image.tmdb.org/t/p/w1400_and_h450_bestv2//tcheoA2nPATCm2vvXw2hVQoaEFD.jpg")
+}
+
+#slide2{
+    background: url("https://image.tmdb.org/t/p/w1400_and_h450_bestv2/o8u0NyEigCEaZHBdCYTRfXR8U4i.jpg")
+}
+
+#slide3{
+    background: url("https://image.tmdb.org/t/p/w1400_and_h450_bestv2//7KsqfXDECZMryX1Rv4RKsT7SIjQ.jpg")   
+}

@@ -21,6 +21,49 @@
 }
 .fa fa-home, .fa fa-user{
 color:white}
+/*
+.navbar-toggle{
+    background-color: grey;
+    margin-right:30px;
+    margin-top:20px;
+}*/
+
+.navbar-toggle {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+ 
+    height: 32px;
+    padding: 8px 12px;
+    
+    border: 2.5px solid orange;
+    border-radius: 4px;
+  }
+  
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: #222222;
+  }
+
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 23px;
+    height: 2px;
+    background-color: orange;
+    border-radius: 1px;
+    
+  }
+  
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 3px;
+    
+  }
+
+  #searchbar{
+      margin-top: 50px;
+  }
+
+  
 
 
 

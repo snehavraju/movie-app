@@ -1,61 +1,44 @@
-<head>
-    
-    
-    </head>
-                
+
+             
            
           
         
+
+
          
      <body>
-            <div class="container" >
-                    
-                       <div class="row"> 
-                      <div class="col-sm-11">   
-                       <input #searchBox type="text" class="form-control search" placeholder=" search for a movie or a tv show " id="searchbar" >
-                      </div>
-                      <div class="col-sm-1">
-                       <button type="button" class="btn btn-success" (click)="search(searchBox.value)"> <i class="fa fa-search" style="font-size:18px;"></i></button>
-                      </div>
-                      
-                       </div>
-                
-                       <br/>
-                    
-                    </div>
-
             
+            
+
             <div class= "container">
                     <div *ngIf="moviedatas">
                         
-                         <h5>Your Search results:</h5>
-                        
+                         <h4>Your Search results:</h4>
+                                
                             <ul *ngFor = " let data of moviedatas.results">
-                                <div class="panel">
+                                    <div class="col-sm-2">
+                                
                                  
                                          
+                                    <div class="panel">
+                                            <div class="panel-body" style="background-color: white ;">
                                     
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                               <img src="https://image.tmdb.org/t/p/w1000/{{data.poster_path}}" style="    width: 175px;
-                               height: 250px;"/>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                 <h4>{{data.title}}</h4>
-                                                 <i class="fa fa-calendar fa-lg"></i>
-                                                 {{data.release_date}}<br/><br/><br/><br/><br/>
-                                                <div id="overview"> Overview:
-                                                {{data.overview}}</div>
-                                            </div>
-                                        </div>
+                                   <a  [routerLink] = "['/movie', data.id]" class="image">  
+                                            
+                               <img src="https://image.tmdb.org/t/p/w1000/{{data.poster_path}}" style=" height: 250px;"/>
+                                            
+                                            
+                                                <h5 class="movietitle"><span>{{data.title}}</span></h5>    
+                                   </a>
+                                </div>
                                 </div>
                                 </div>
                              
                         </ul>
-                        
+                        </div>    
+                 
                  </div>
-                 </div>
-
+                 
+            
                  
      </body>

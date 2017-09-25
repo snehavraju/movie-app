@@ -1,0 +1,68 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<div *ngIf ="movie">
+
+    <body >
+
+        
+        <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+                <img src="https://image.tmdb.org/t/p/w1000/{{movie.poster_path}}" style="    width: 300px;
+                height: 450px;"/>
+        </div>
+
+        <div class="col-sm-8">
+
+                <h1>{{movie.title}}</h1>
+               <h4> <i class="fa fa-calendar fa-lg"></i>  {{movie.release_date}}</h4><br/><br/>
+              
+               <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-list fa-stack-1x fa-inverse"></i>
+                  </span>
+                  
+               
+               <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bookmark fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                          </span>
+
+                          <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-play fa-stack-1x fa-inverse"></i>
+                              </span><br/><br/>
+                              <br/>
+                              <div class="rate">Rating:{{movie.vote_average}}</div> <br/>
+                              <div class="rate"> Genre:
+                              <ul *ngFor = " let xyz of movie.genres">{{xyz.name}}</ul> </div>            
+                              
+               
+                          <h3>Overview:</h3>
+               <div id="overview">
+                {{movie.overview}}</div>
+                
+                
+        </div>
+        
+    </div>
+        
+    
+    
+       
+</div>
+</body>
+
+</div>
